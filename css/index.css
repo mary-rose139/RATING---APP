@@ -1,0 +1,177 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center; 
+    align-items: center;      
+    height: 100vh;            
+    margin: 0;
+     font-family: 'Overpass', sans-serif;
+}
+
+
+
+.container{
+
+   background-color:   hsl(213, 19%, 18%);
+   width: 30rem;
+   height: 30rem;
+   padding: 25px;
+   text-align:start;
+   font-size: 1rem;
+   border-radius: 15px;
+   text-align: left;
+   
+   
+
+}
+.star{
+    background-color: black;
+    border: 9px solid black ;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+}
+p{
+    font-size: 20px;
+    color: hsl(217, 12%, 63%);
+    text-align: left;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 70px;
+  color:  hsl(213, 19%, 18%);
+     
+}
+
+.btn{
+    border: none;
+    font-size:20px ;
+   color: hsl(217, 12%, 63%);
+   background-color:   hsl(216, 12%, 8%);
+    border-radius: 50%;
+   width: 70px;
+   height: 70px;
+}
+
+.btn:hover{
+background-color:  hsl(25, 97%, 53%);
+cursor: pointer;
+}
+
+
+.submit {
+    height: 50px;
+    width: 400px;
+    margin: 30px auto 0;   
+    display: block;        
+    background: hsl(25, 97%, 53%);
+    border: none;
+    border-radius: 25px;
+    padding: 0.8rem 1.5rem;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.thankyou{
+    background-color: hsl(213, 19%, 18%);
+     width: 150px;
+    height: 150px;
+    border: none;
+     margin-left: 150px;
+    margin-top: 20px;
+
+}
+
+.selected-text{
+
+    color: hsl(25, 97%, 53%);
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    background-color:  hsl(214, 29%, 19%);
+    padding: 0.8rem 1.5rem;
+
+    
+}
+.thank-you-para{
+    text-align: center;
+}
+
+.thank-you-hidden {
+  display: none;
+}
+.btn.active {
+  background-color: white;
+  color: black;
+}
+
+.submit:active {
+     background-color: white;
+    color: hsl(25, 97%, 53%) ;
+    
+}
+
+
+@media (max-width: 376px) {
+  .container {
+    width: 80%;       
+    height: 85%;     
+    padding: 20px;
+    border-radius: 20px;
+    
+  }
+
+  h1 {
+    font-size: 24px;  
+  }
+
+  p {
+    font-size: 16px;  
+  }
+
+  .buttons {
+    gap: 1rem;        
+    margin-top: 50px; 
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+
+  }
+
+  .submit {
+    width: 100%;      
+    margin: 25px auto 0;
+  }
+
+  .thankyou {
+    width: 100px;
+    height: 100px;
+     margin-left: 100px;
+    margin-top: 20px;
+  }
+
+  .selected-text {
+    font-size: 14px;
+    padding: 0.4rem 1rem;
+  }
+}
+
+.thank-you-hidden {
+  display: none;
+}
