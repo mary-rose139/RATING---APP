@@ -6,21 +6,19 @@ let rating = 0;
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
-    buttons.forEach((b) => {
-      b.classList.remove("active");
-    });
+    buttons.forEach((b) => b.classList.remove("active"));
     button.classList.add("active");
-    let value = button.textContent;
-    rating = value;
+    rating = button.textContent;
   });
 });
+
 
 submitBtn.addEventListener("click", () => {
   if (rating > 0) {
     ratingText.textContent = rating;
 
     setTimeout(() => {
-      const ratingCard = document.querySelector(".container");
+      const ratingCard = document.querySelector(".rating-card");
       const thankCard = document.querySelector(".thank-you-hidden");
 
       ratingCard.style.display = "none";
